@@ -1,78 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Каталог из четырёх настольных ламп магазина СветДом.">
-  <title>Каталог ламп - СветДом</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
-  <header class="site-header">
-    <div class="site-header__inner container">
-      <a class="site-header__logo" href="index.html">СветДом</a>
-      <nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list">
-        <li><a class="site-nav__link" href="index.html">Главная</a></li>
-        <li><a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a></li>
-        <li><a class="site-nav__link" href="product.html">Лампа «Лайм»</a></li>
-        <li><a class="site-nav__link" href="order.html">Заявка</a></li>
-        <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
-      </ul></nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Каталог из четырёх настольных ламп магазина СветДом." />
+    <title>Каталог ламп - СветДом</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="site-header__inner container">
+        <a class="site-header__logo" href="index.html">СветДом</a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="index.html">Главная</a></li>
+            <li>
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="catalog.html"
+                aria-current="page"
+              >
+                Каталог
+              </a>
+            </li>
+            <li>
+              <a class="site-nav__link" href="product.html">Лампа «Лайм»</a>
+            </li>
+            <li><a class="site-nav__link" href="order.html">Заявка</a></li>
+            <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <main id="main-content">
-    <div class="page-title container">
-      <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span>→</span><span aria-current="page">Каталог</span></nav>
-      <h1>Каталог настольных ламп</h1>
-      <p>В каталоге представлены четыре модели. Фильтры добавлены как пример интерфейса.</p>
-    </div>
+    <main id="main-content">
+      <div class="page-title container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a>
+          <span>→</span>
+          <span aria-current="page">Каталог</span>
+        </nav>
+        <h1>Каталог настольных ламп</h1>
+        <p>В каталоге представлены четыре модели. Фильтры добавлены как пример интерфейса.</p>
+      </div>
 
-    <div class="catalog container">
-      <aside class="filter">
-        <h2 class="filter__title">Фильтры</h2>
-        <form class="filter__form">
-          <fieldset class="filter__group"><legend>Стиль</legend>
-            <label><input type="checkbox" name="style" value="work"> Рабочая</label>
-            <label><input type="checkbox" name="style" value="classic"> Классическая</label>
-            <label><input type="checkbox" name="style" value="decor"> Декоративная</label>
-          </fieldset>
-          <fieldset class="filter__group"><legend>Цена</legend>
-            <label><input type="radio" name="price" value="5000"> До 5 000 ₽</label>
-            <label><input type="radio" name="price" value="9000"> До 9 000 ₽</label>
-          </fieldset>
-          <button class="button button--outline" type="reset">Сбросить</button>
-        </form>
-      </aside>
+      <div class="catalog container">
+        <aside class="filter">
+          <h2 class="filter__title">Фильтры</h2>
+          <form class="filter__form">
+            <fieldset class="filter__group">
+              <legend>Стиль</legend>
+              <label>
+                <input type="checkbox" name="style" value="work" />
+                Рабочая
+              </label>
+              <label>
+                <input type="checkbox" name="style" value="classic" />
+                Классическая
+              </label>
+              <label>
+                <input type="checkbox" name="style" value="decor" />
+                Декоративная
+              </label>
+            </fieldset>
+            <fieldset class="filter__group">
+              <legend>Цена</legend>
+              <label>
+                <input type="radio" name="price" value="5000" />
+                До 5 000 ₽
+              </label>
+              <label>
+                <input type="radio" name="price" value="9000" />
+                До 9 000 ₽
+              </label>
+            </fieldset>
+            <button class="button button--outline" type="reset">Сбросить</button>
+          </form>
+        </aside>
 
-      <section class="catalog__products" aria-labelledby="catalog-heading">
-        <h2 class="catalog__heading" id="catalog-heading">Все товары <span>4</span></h2>
-        <div class="product-grid product-grid--catalog">
-          <article class="product-card product-card--new">
-            <span class="product-card__badge">Новинка</span>
-            <a href="product.html"><img class="product-card__image" src="images/lamp-green.webp" alt="Зелёная рабочая лампа Лайм" width="900" height="900"></a>
-            <div class="product-card__content"><p class="product-card__category">Рабочая лампа</p><h3 class="product-card__title"><a href="product.html">Лайм</a></h3><p class="product-card__text">Регулируемый кронштейн, металлический корпус, яркий цвет.</p><div class="product-card__bottom"><strong>3 490 ₽</strong><a class="button button--small" href="order.html#order-form">Заказать</a></div></div>
-          </article>
-          <article class="product-card">
-            <img class="product-card__image" src="images/lamp-beige.webp" alt="Бежевая лампа Классика" width="900" height="900">
-            <div class="product-card__content"><p class="product-card__category">Классическая лампа</p><h3 class="product-card__title">Классика</h3><p class="product-card__text">Тканевый абажур, бежевый корпус и золотистое основание.</p><div class="product-card__bottom"><strong>5 990 ₽</strong><a class="button button--small" href="order.html#order-form">Заказать</a></div></div>
-          </article>
-          <article class="product-card">
-            <img class="product-card__image" src="images/lamp-black.webp" alt="Чёрная лампа Нуар" width="900" height="900">
-            <div class="product-card__content"><p class="product-card__category">Классическая лампа</p><h3 class="product-card__title">Нуар</h3><p class="product-card__text">Чёрный абажур и рельефное стеклянное основание.</p><div class="product-card__bottom"><strong>6 490 ₽</strong><a class="button button--small" href="order.html#order-form">Заказать</a></div></div>
-          </article>
-          <article class="product-card product-card--hit">
-            <span class="product-card__badge">Хит</span>
-            <img class="product-card__image" src="images/lamp-bird.webp" alt="Деревянная лампа Лесная птица" width="900" height="900">
-            <div class="product-card__content"><p class="product-card__category">Декоративная лампа</p><h3 class="product-card__title">Лесная птица</h3><p class="product-card__text">Деревянный корпус, фигурный плафон и тёплый свет.</p><div class="product-card__bottom"><strong>8 990 ₽</strong><a class="button button--small" href="order.html#order-form">Заказать</a></div></div>
-          </article>
+        <section class="catalog__products" aria-labelledby="catalog-heading">
+          <h2 class="catalog__heading" id="catalog-heading">
+            Все товары
+            <span>4</span>
+          </h2>
+          <div class="product-grid product-grid--catalog">
+            <article class="product-card product-card--new">
+              <span class="product-card__badge">Новинка</span>
+              <a href="product.html">
+                <img
+                  class="product-card__image"
+                  src="images/lamp-green.webp"
+                  alt="Зелёная рабочая лампа Лайм"
+                  width="900"
+                  height="900"
+                />
+              </a>
+              <div class="product-card__content">
+                <p class="product-card__category">Рабочая лампа</p>
+                <h3 class="product-card__title">
+                  <a href="product.html">Лайм</a>
+                </h3>
+                <p class="product-card__text">
+                  Регулируемый кронштейн, металлический корпус, яркий цвет.
+                </p>
+                <div class="product-card__bottom">
+                  <strong>3 490 ₽</strong>
+                  <a class="button button--small" href="order.html#order-form">Заказать</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <img
+                class="product-card__image"
+                src="images/lamp-beige.webp"
+                alt="Бежевая лампа Классика"
+                width="900"
+                height="900"
+              />
+              <div class="product-card__content">
+                <p class="product-card__category">Классическая лампа</p>
+                <h3 class="product-card__title">Классика</h3>
+                <p class="product-card__text">
+                  Тканевый абажур, бежевый корпус и золотистое основание.
+                </p>
+                <div class="product-card__bottom">
+                  <strong>5 990 ₽</strong>
+                  <a class="button button--small" href="order.html#order-form">Заказать</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <img
+                class="product-card__image"
+                src="images/lamp-black.webp"
+                alt="Чёрная лампа Нуар"
+                width="900"
+                height="900"
+              />
+              <div class="product-card__content">
+                <p class="product-card__category">Классическая лампа</p>
+                <h3 class="product-card__title">Нуар</h3>
+                <p class="product-card__text">Чёрный абажур и рельефное стеклянное основание.</p>
+                <div class="product-card__bottom">
+                  <strong>6 490 ₽</strong>
+                  <a class="button button--small" href="order.html#order-form">Заказать</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-card product-card--hit">
+              <span class="product-card__badge">Хит</span>
+              <img
+                class="product-card__image"
+                src="images/lamp-bird.webp"
+                alt="Деревянная лампа Лесная птица"
+                width="900"
+                height="900"
+              />
+              <div class="product-card__content">
+                <p class="product-card__category">Декоративная лампа</p>
+                <h3 class="product-card__title">Лесная птица</h3>
+                <p class="product-card__text">Деревянный корпус, фигурный плафон и тёплый свет.</p>
+                <div class="product-card__bottom">
+                  <strong>8 990 ₽</strong>
+                  <a class="button button--small" href="order.html#order-form">Заказать</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner container">
+        <div>
+          <strong class="site-footer__logo">СветДом</strong>
+          <p>Учебный интернет-магазин настольных ламп.</p>
         </div>
-      </section>
-    </div>
-  </main>
-
-  <footer class="site-footer"><div class="site-footer__inner container"><div><strong class="site-footer__logo">СветДом</strong><p>Учебный интернет-магазин настольных ламп.</p></div><div><h2 class="site-footer__title">Разделы</h2><a href="index.html#advantages">Преимущества</a><a href="order.html">Заявка</a><a href="contacts.html">Контакты</a></div><div><h2 class="site-footer__title">Связаться</h2><a href="tel:+74951234567">+7 495 123-45-67</a><a href="mailto:shop@example.ru">shop@example.ru</a></div></div><div class="site-footer__bottom container">© 2026 СветДом · Учебный проект</div></footer>
-  <a class="back-to-top" href="#main-content" aria-label="Наверх">↑</a>
-</body>
+        <div>
+          <h2 class="site-footer__title">Разделы</h2>
+          <a href="index.html#advantages">Преимущества</a>
+          <a href="order.html">Заявка</a>
+          <a href="contacts.html">Контакты</a>
+        </div>
+        <div>
+          <h2 class="site-footer__title">Связаться</h2>
+          <a href="tel:+74951234567">+7 495 123-45-67</a>
+          <a href="mailto:shop@example.ru">shop@example.ru</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom container">© 2026 СветДом · Учебный проект</div>
+    </footer>
+    <a class="back-to-top" href="#main-content" aria-label="Наверх">↑</a>
+  </body>
 </html>

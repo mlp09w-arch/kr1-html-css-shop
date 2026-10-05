@@ -1,48 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Форма заявки на покупку настольной лампы в магазине СветДом.">
-  <title>Оставить заявку - СветДом</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
-  <header class="site-header"><div class="site-header__inner container"><a class="site-header__logo" href="index.html">СветДом</a><nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li><a class="site-nav__link" href="index.html">Главная</a></li><li><a class="site-nav__link" href="catalog.html">Каталог</a></li><li><a class="site-nav__link" href="product.html">Лампа «Лайм»</a></li><li><a class="site-nav__link site-nav__link--active" href="order.html" aria-current="page">Заявка</a></li><li><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul></nav></div></header>
-
-  <main id="main-content">
-    <div class="page-title container"><nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span>→</span><span aria-current="page">Заявка</span></nav><h1>Оставить заявку</h1><p>Это единственная форма на сайте, где нужно вводить контактные данные.</p></div>
-
-    <section class="section section--gray">
-      <div class="order-layout container">
-        <form class="order-form" id="order-form" action="order.html#order-form" method="get">
-          <h2 class="order-form__title">Данные для заявки</h2>
-          <div class="order-form__row">
-            <div class="order-form__field"><label for="name">Имя *</label><input id="name" name="name" type="text" minlength="2" placeholder="Иван" autocomplete="name" required></div>
-            <div class="order-form__field"><label for="phone">Телефон *</label><input id="phone" name="phone" type="tel" pattern="[+0-9 ()-]{10,20}" placeholder="+7 999 000-00-00" autocomplete="tel" required></div>
-          </div>
-          <div class="order-form__field"><label for="email">E-mail *</label><input id="email" name="email" type="email" placeholder="name@example.ru" autocomplete="email" required></div>
-          <div class="order-form__row">
-            <div class="order-form__field"><label for="product">Выберите лампу *</label><select id="product" name="product" required><option value="">Не выбрана</option><option>Лайм - 3 490 ₽</option><option>Классика - 5 990 ₽</option><option>Нуар - 6 490 ₽</option><option>Лесная птица - 8 990 ₽</option></select></div>
-            <div class="order-form__field"><label for="date">Желаемая дата доставки</label><input id="date" name="date" type="date"></div>
-          </div>
-          <div class="order-form__field"><label for="message">Комментарий</label><textarea id="message" name="message" rows="4" placeholder="Например: позвонить после 17:00"></textarea></div>
-          <label class="order-form__checkbox"><input name="agreement" type="checkbox" required> Я согласен на обработку персональных данных *</label>
-          <div class="order-form__actions"><button class="button" type="submit">Отправить заявку</button><button class="button button--outline" type="reset">Очистить</button></div>
-          <p class="order-form__note">Форма учебная и не отправляет данные на сервер.</p>
-        </form>
-
-        <aside class="order-info">
-          <h2>Как оформить заказ</h2>
-          <ol><li>Выберите одну из четырёх ламп.</li><li>Заполните контактные данные.</li><li>Мы уточним наличие и доставку.</li></ol>
-          <p><strong>Телефон:</strong><br><a href="tel:+74951234567">+7 495 123-45-67</a></p>
-        </aside>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Форма заявки на покупку настольной лампы в магазине СветДом."
+    />
+    <title>Оставить заявку - СветДом</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="site-header__inner container">
+        <a class="site-header__logo" href="index.html">СветДом</a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="index.html">Главная</a></li>
+            <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+            <li>
+              <a class="site-nav__link" href="product.html">Лампа «Лайм»</a>
+            </li>
+            <li>
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="order.html"
+                aria-current="page"
+              >
+                Заявка
+              </a>
+            </li>
+            <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
-  </main>
+    </header>
 
-  <footer class="site-footer"><div class="site-footer__inner container"><div><strong class="site-footer__logo">СветДом</strong><p>Учебный интернет-магазин настольных ламп.</p></div><div><h2 class="site-footer__title">Разделы</h2><a href="catalog.html">Каталог</a><a href="product.html">Лампа «Лайм»</a><a href="contacts.html">Контакты</a></div><div><h2 class="site-footer__title">Связаться</h2><a href="tel:+74951234567">+7 495 123-45-67</a><a href="mailto:shop@example.ru">shop@example.ru</a></div></div><div class="site-footer__bottom container">© 2026 СветДом · Учебный проект</div></footer>
-  <a class="back-to-top" href="#main-content" aria-label="Наверх">↑</a>
-</body>
+    <main id="main-content">
+      <div class="page-title container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a>
+          <span>→</span>
+          <span aria-current="page">Заявка</span>
+        </nav>
+        <h1>Оставить заявку</h1>
+        <p>Это единственная форма на сайте, где нужно вводить контактные данные.</p>
+      </div>
+
+      <section class="section section--gray">
+        <div class="order-layout container">
+          <form class="order-form" id="order-form" action="order.html#order-form" method="get">
+            <h2 class="order-form__title">Данные для заявки</h2>
+            <div class="order-form__row">
+              <div class="order-form__field">
+                <label for="name">Имя *</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  minlength="2"
+                  placeholder="Иван"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="order-form__field">
+                <label for="phone">Телефон *</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  pattern="[+0-9 ()-]{10,20}"
+                  placeholder="+7 999 000-00-00"
+                  autocomplete="tel"
+                  required
+                />
+              </div>
+            </div>
+            <div class="order-form__field">
+              <label for="email">E-mail *</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="name@example.ru"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="order-form__row">
+              <div class="order-form__field">
+                <label for="product">Выберите лампу *</label>
+                <select id="product" name="product" required>
+                  <option value="">Не выбрана</option>
+                  <option>Лайм - 3 490 ₽</option>
+                  <option>Классика - 5 990 ₽</option>
+                  <option>Нуар - 6 490 ₽</option>
+                  <option>Лесная птица - 8 990 ₽</option>
+                </select>
+              </div>
+              <div class="order-form__field">
+                <label for="date">Желаемая дата доставки</label>
+                <input id="date" name="date" type="date" />
+              </div>
+            </div>
+            <div class="order-form__field">
+              <label for="message">Комментарий</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Например: позвонить после 17:00"
+              ></textarea>
+            </div>
+            <label class="order-form__checkbox">
+              <input name="agreement" type="checkbox" required />
+              Я согласен на обработку персональных данных *
+            </label>
+            <div class="order-form__actions">
+              <button class="button" type="submit">Отправить заявку</button>
+              <button class="button button--outline" type="reset">Очистить</button>
+            </div>
+            <p class="order-form__note">Форма учебная и не отправляет данные на сервер.</p>
+          </form>
+
+          <aside class="order-info">
+            <h2>Как оформить заказ</h2>
+            <ol>
+              <li>Выберите одну из четырёх ламп.</li>
+              <li>Заполните контактные данные.</li>
+              <li>Мы уточним наличие и доставку.</li>
+            </ol>
+            <p>
+              <strong>Телефон:</strong>
+              <br />
+              <a href="tel:+74951234567">+7 495 123-45-67</a>
+            </p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner container">
+        <div>
+          <strong class="site-footer__logo">СветДом</strong>
+          <p>Учебный интернет-магазин настольных ламп.</p>
+        </div>
+        <div>
+          <h2 class="site-footer__title">Разделы</h2>
+          <a href="catalog.html">Каталог</a>
+          <a href="product.html">Лампа «Лайм»</a>
+          <a href="contacts.html">Контакты</a>
+        </div>
+        <div>
+          <h2 class="site-footer__title">Связаться</h2>
+          <a href="tel:+74951234567">+7 495 123-45-67</a>
+          <a href="mailto:shop@example.ru">shop@example.ru</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom container">© 2026 СветДом · Учебный проект</div>
+    </footer>
+    <a class="back-to-top" href="#main-content" aria-label="Наверх">↑</a>
+  </body>
 </html>
