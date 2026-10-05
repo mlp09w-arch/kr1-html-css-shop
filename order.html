@@ -6,7 +6,6 @@
   <meta name="description" content="Оставьте заявку на светильник или бесплатный подбор освещения от дизайнеров FORMA.">
   <title>Оформить заявку — FORMA</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Перейти к содержимому</a>
@@ -17,7 +16,7 @@
 
     <section class="order-page section--compact">
       <div class="order-page__inner container">
-        <form class="order-form order-form--page js-demo-form" id="order-form" action="#" method="post">
+        <form class="order-form order-form--page" id="order-form" action="order.html#order-form" method="get">
           <input name="source" type="hidden" value="Страница оформления заявки">
           <fieldset class="order-form__section"><legend class="order-form__legend"><span>01</span>Контактные данные</legend>
             <div class="order-form__row"><div class="order-form__field"><label class="order-form__label" for="name">Имя *</label><input class="order-form__input" id="name" name="name" type="text" minlength="2" autocomplete="name" placeholder="Иван" required><small class="order-form__hint">Минимум 2 символа</small></div><div class="order-form__field"><label class="order-form__label" for="email">E-mail *</label><input class="order-form__input" id="email" name="email" type="email" autocomplete="email" placeholder="name@example.ru" required></div></div>

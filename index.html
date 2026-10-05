@@ -6,7 +6,6 @@
   <meta name="description" content="FORMA — дизайнерский свет для дома: локальные светильники, честные материалы и помощь в подборе.">
   <title>FORMA — дизайнерский свет для дома</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Перейти к содержимому</a>
@@ -22,7 +21,7 @@
           <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
-      <button class="button button--small js-open-order" type="button" data-product="Консультация по свету">Подобрать свет</button>
+      <a class="button button--small" href="#quick-order">Подобрать свет</a>
     </div>
   </header>
 
@@ -75,17 +74,17 @@
           <article class="product-card product-card--featured">
             <span class="product-card__badge">Хит</span>
             <a class="product-card__image-link" href="product.html"><img class="product-card__image" src="images/aura.svg" alt="Настольный светильник Aura Mini" width="480" height="520"></a>
-            <div class="product-card__body"><p class="product-card__category">Настольный свет</p><h3 class="product-card__title"><a href="product.html">Aura Mini</a></h3><p class="product-card__description">Мягкий направленный свет и бесступенчатая регулировка яркости.</p><div class="product-card__footer"><p class="product-card__price">7 990 ₽</p><button class="button button--icon js-open-order" type="button" data-product="Aura Mini" aria-label="Заказать Aura Mini">+</button></div></div>
+            <div class="product-card__body"><p class="product-card__category">Настольный свет</p><h3 class="product-card__title"><a href="product.html">Aura Mini</a></h3><p class="product-card__description">Мягкий направленный свет и бесступенчатая регулировка яркости.</p><div class="product-card__footer"><p class="product-card__price">7 990 ₽</p><a class="button button--icon" href="order.html#order-form" aria-label="Заказать Aura Mini">+</a></div></div>
           </article>
           <article class="product-card">
             <span class="product-card__badge product-card__badge--new">Новинка</span>
             <a class="product-card__image-link" href="product.html"><img class="product-card__image" src="images/line.svg" alt="Подвесной светильник Line 40" width="480" height="520"></a>
-            <div class="product-card__body"><p class="product-card__category">Подвесной свет</p><h3 class="product-card__title"><a href="product.html">Line 40</a></h3><p class="product-card__description">Тонкая световая линия для обеденной зоны или рабочего стола.</p><div class="product-card__footer"><p class="product-card__price">11 990 ₽</p><button class="button button--icon js-open-order" type="button" data-product="Line 40" aria-label="Заказать Line 40">+</button></div></div>
+            <div class="product-card__body"><p class="product-card__category">Подвесной свет</p><h3 class="product-card__title"><a href="product.html">Line 40</a></h3><p class="product-card__description">Тонкая световая линия для обеденной зоны или рабочего стола.</p><div class="product-card__footer"><p class="product-card__price">11 990 ₽</p><a class="button button--icon" href="order.html#order-form" aria-label="Заказать Line 40">+</a></div></div>
           </article>
           <article class="product-card product-card--sale">
             <span class="product-card__badge product-card__badge--sale">−15%</span>
             <a class="product-card__image-link" href="product.html"><img class="product-card__image" src="images/orb.svg" alt="Настольный светильник Orb" width="480" height="520"></a>
-            <div class="product-card__body"><p class="product-card__category">Рассеянный свет</p><h3 class="product-card__title"><a href="product.html">Orb</a></h3><p class="product-card__description">Стеклянная сфера создаёт равномерное свечение без резких теней.</p><div class="product-card__footer"><p class="product-card__price"><s>7 590 ₽</s> 6 490 ₽</p><button class="button button--icon js-open-order" type="button" data-product="Orb" aria-label="Заказать Orb">+</button></div></div>
+            <div class="product-card__body"><p class="product-card__category">Рассеянный свет</p><h3 class="product-card__title"><a href="product.html">Orb</a></h3><p class="product-card__description">Стеклянная сфера создаёт равномерное свечение без резких теней.</p><div class="product-card__footer"><p class="product-card__price"><s>7 590 ₽</s> 6 490 ₽</p><a class="button button--icon" href="order.html#order-form" aria-label="Заказать Orb">+</a></div></div>
           </article>
         </div>
       </div>
@@ -98,7 +97,7 @@
           <p class="eyebrow">Подбор освещения</p><h2 class="story__title">Один дом — несколько сценариев</h2>
           <p>Утром нужен ясный рабочий свет, вечером — мягкий и камерный. Расскажите нам о комнате, а мы предложим комплект и схему размещения.</p>
           <ul class="check-list"><li>Разберём планировку и задачи</li><li>Подберём температуру и мощность</li><li>Соберём комплект в рамках бюджета</li></ul>
-          <button class="button button--light js-open-order" type="button" data-product="Бесплатный световой план">Получить световой план</button>
+          <a class="button button--light" href="#quick-order">Получить световой план</a>
         </div>
       </div>
     </section>
@@ -135,17 +134,19 @@
   </footer>
 
   <a class="floating-action" href="#main-content" aria-label="Вернуться наверх">↑</a>
-  <dialog class="order-dialog" id="order-dialog" aria-labelledby="dialog-title">
-    <form class="order-form order-dialog__form" id="quick-order-form" method="dialog">
-      <button class="order-dialog__close js-close-order" type="button" aria-label="Закрыть окно">×</button>
-      <p class="eyebrow">Быстрая заявка</p><h2 class="order-dialog__title" id="dialog-title">Обсудим ваш свет</h2><p class="order-dialog__lead">Оставьте контакты — консультант перезвонит в течение рабочего дня.</p>
-      <input id="quick-product" name="product" type="hidden" value="Консультация по свету">
-      <div class="order-form__field"><label class="order-form__label" for="quick-name">Имя *</label><input class="order-form__input" id="quick-name" name="name" type="text" minlength="2" autocomplete="name" placeholder="Как к вам обращаться" required></div>
-      <div class="order-form__row"><div class="order-form__field"><label class="order-form__label" for="quick-email">E-mail *</label><input class="order-form__input" id="quick-email" name="email" type="email" autocomplete="email" placeholder="name@example.ru" required></div><div class="order-form__field"><label class="order-form__label" for="quick-phone">Телефон *</label><input class="order-form__input" id="quick-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 999 000-00-00" pattern="[+0-9 ()-]{10,20}" required></div></div>
-      <div class="order-form__field"><label class="order-form__label" for="quick-message">Комментарий</label><textarea class="order-form__input order-form__textarea" id="quick-message" name="message" rows="3" placeholder="Расскажите о комнате или задаче"></textarea></div>
-      <label class="order-form__check"><input name="agreement" type="checkbox" required><span>Я согласен на обработку персональных данных *</span></label>
-      <div class="order-form__actions"><button class="button" type="submit">Отправить заявку</button><span class="order-form__status" role="status" aria-live="polite"></span></div>
-    </form>
-  </dialog>
+  <section class="order-modal" id="quick-order" aria-labelledby="modal-title">
+    <a class="order-modal__backdrop" href="#main-content" aria-label="Закрыть форму"></a>
+    <div class="order-modal__panel">
+      <form class="order-form order-modal__form" action="order.html" method="get">
+        <a class="order-modal__close" href="#main-content" aria-label="Закрыть окно">×</a>
+        <p class="eyebrow">Быстрая заявка</p><h2 class="order-modal__title" id="modal-title">Обсудим ваш свет</h2><p class="order-modal__lead">Заполните контакты и перейдите к подробной заявке.</p>
+        <input name="request-type" type="hidden" value="Подобрать светильники">
+        <div class="order-form__field"><label class="order-form__label" for="quick-name">Имя *</label><input class="order-form__input" id="quick-name" name="name" type="text" minlength="2" autocomplete="name" placeholder="Как к вам обращаться" required></div>
+        <div class="order-form__row"><div class="order-form__field"><label class="order-form__label" for="quick-email">E-mail *</label><input class="order-form__input" id="quick-email" name="email" type="email" autocomplete="email" placeholder="name@example.ru" required></div><div class="order-form__field"><label class="order-form__label" for="quick-phone">Телефон *</label><input class="order-form__input" id="quick-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 999 000-00-00" pattern="[+0-9 ()-]{10,20}" required></div></div>
+        <label class="order-form__check"><input name="agreement" type="checkbox" required><span>Я согласен на обработку персональных данных *</span></label>
+        <div class="order-form__actions"><button class="button" type="submit">Продолжить оформление</button></div>
+      </form>
+    </div>
+  </section>
 </body>
 </html>
