@@ -3,36 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каталог товаров</title>
+  <meta name="description" content="FORMA — дизайнерский свет для дома: локальные светильники, честные материалы и помощь в подборе.">
+  <title>FORMA — дизайнерский свет для дома</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Учебный интернет-магазин</h1>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a class="site-header__logo" href="index.html" aria-label="FORMA — на главную"><span class="site-header__logo-mark" aria-hidden="true"></span>FORMA</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a></li>
+          <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li><a class="site-nav__link" href="product.html">Светильник Aura</a></li>
+          <li><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="button button--small js-open-order" type="button" data-product="Консультация по свету">Подобрать свет</button>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Главная страница проекта</h2>
-      <p>
-        Это стартовая страница учебного frontend-проекта.
-        В дальнейшем здесь будет разработан многостраничный сайт
-        интернет-магазина или каталога услуг.
-      </p>
-    </section>
-    <section>
-        <h2>О проекте</h2>
-        <p>
-            В рамках данного проекта будет разработан многостраничный сайт
-            интернет-магазина или каталога услуг. Проект будет постепенно
-            расширяться на следующих практических занятиях.
-        </p>
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <p class="eyebrow">Коллекция 2026 · сделано в России</p>
+          <h1 class="hero__title">Свет, который<br><em>чувствует дом</em></h1>
+          <p class="hero__text">Лаконичные светильники из металла и стекла. Поможем собрать сценарий освещения, который подходит вашему пространству и ритму жизни.</p>
+          <div class="hero__actions">
+            <a class="button" href="catalog.html">Смотреть коллекцию</a>
+            <a class="text-link" href="#advantages">Почему FORMA <span aria-hidden="true">↓</span></a>
+          </div>
+          <dl class="hero__facts" aria-label="Преимущества магазина">
+            <div class="hero__fact"><dt>3 года</dt><dd>гарантии</dd></div>
+            <div class="hero__fact"><dt>14 дней</dt><dd>на возврат</dd></div>
+            <div class="hero__fact"><dt>0 ₽</dt><dd>подбор света</dd></div>
+          </dl>
+        </div>
+        <div class="hero__visual">
+          <span class="hero__shape" aria-hidden="true"></span>
+          <img class="hero__image" src="images/aura.svg" alt="Настольный светильник Aura в интерьере" width="640" height="720">
+          <a class="hero__product-tag" href="product.html"><span>Aura Mini</span><strong>7 990 ₽</strong></a>
+        </div>
+      </div>
     </section>
 
+    <section class="section section--cream" id="advantages">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">Почему мы</p><h2 class="section-heading__title">Продумано до последнего люмена</h2></div>
+          <p class="section-heading__lead">Создаём не просто предметы, а спокойную и функциональную атмосферу для каждого пространства.</p>
+        </div>
+        <div class="benefits-grid">
+          <article class="benefit-card"><span class="benefit-card__number">01</span><h3 class="benefit-card__title">Честные материалы</h3><p class="benefit-card__text">Сталь с порошковой окраской, матовое стекло и сертифицированная электрика.</p></article>
+          <article class="benefit-card"><span class="benefit-card__number">02</span><h3 class="benefit-card__title">Комфортный свет</h3><p class="benefit-card__text">Тёплая температура и отсутствие мерцания помогают глазам меньше уставать.</p></article>
+          <article class="benefit-card"><span class="benefit-card__number">03</span><h3 class="benefit-card__title">Сервис без формальностей</h3><p class="benefit-card__text">Консультант отвечает за подбор от первого сообщения до установки.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="popular">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <div><p class="eyebrow">Выбор покупателей</p><h2 class="section-heading__title">Светильники с характером</h2></div>
+          <a class="text-link" href="catalog.html">Весь каталог <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="product-grid">
+          <article class="product-card product-card--featured">
+            <span class="product-card__badge">Хит</span>
+            <a class="product-card__image-link" href="product.html"><img class="product-card__image" src="images/aura.svg" alt="Настольный светильник Aura Mini" width="480" height="520"></a>
+            <div class="product-card__body"><p class="product-card__category">Настольный свет</p><h3 class="product-card__title"><a href="product.html">Aura Mini</a></h3><p class="product-card__description">Мягкий направленный свет и бесступенчатая регулировка яркости.</p><div class="product-card__footer"><p class="product-card__price">7 990 ₽</p><button class="button button--icon js-open-order" type="button" data-product="Aura Mini" aria-label="Заказать Aura Mini">+</button></div></div>
+          </article>
+          <article class="product-card">
+            <span class="product-card__badge product-card__badge--new">Новинка</span>
+            <a class="product-card__image-link" href="product.html"><img class="product-card__image" src="images/line.svg" alt="Подвесной светильник Line 40" width="480" height="520"></a>
+            <div class="product-card__body"><p class="product-card__category">Подвесной свет</p><h3 class="product-card__title"><a href="product.html">Line 40</a></h3><p class="product-card__description">Тонкая световая линия для обеденной зоны или рабочего стола.</p><div class="product-card__footer"><p class="product-card__price">11 990 ₽</p><button class="button button--icon js-open-order" type="button" data-product="Line 40" aria-label="Заказать Line 40">+</button></div></div>
+          </article>
+          <article class="product-card product-card--sale">
+            <span class="product-card__badge product-card__badge--sale">−15%</span>
+            <a class="product-card__image-link" href="product.html"><img class="product-card__image" src="images/orb.svg" alt="Настольный светильник Orb" width="480" height="520"></a>
+            <div class="product-card__body"><p class="product-card__category">Рассеянный свет</p><h3 class="product-card__title"><a href="product.html">Orb</a></h3><p class="product-card__description">Стеклянная сфера создаёт равномерное свечение без резких теней.</p><div class="product-card__footer"><p class="product-card__price"><s>7 590 ₽</s> 6 490 ₽</p><button class="button button--icon js-open-order" type="button" data-product="Orb" aria-label="Заказать Orb">+</button></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story section">
+      <div class="story__inner container">
+        <div class="story__visual" aria-hidden="true"><span class="story__sun"></span><span class="story__lamp"></span></div>
+        <div class="story__content">
+          <p class="eyebrow">Подбор освещения</p><h2 class="story__title">Один дом — несколько сценариев</h2>
+          <p>Утром нужен ясный рабочий свет, вечером — мягкий и камерный. Расскажите нам о комнате, а мы предложим комплект и схему размещения.</p>
+          <ul class="check-list"><li>Разберём планировку и задачи</li><li>Подберём температуру и мощность</li><li>Соберём комплект в рамках бюджета</li></ul>
+          <button class="button button--light js-open-order" type="button" data-product="Бесплатный световой план">Получить световой план</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact" id="reviews">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Отзывы</p><h2 class="section-heading__title">Живой свет в живых домах</h2></div></div>
+        <div class="review-grid">
+          <article class="review-card"><p class="review-card__rating" aria-label="Оценка 5 из 5">★★★★★</p><blockquote class="review-card__quote">«Aura наконец решила вопрос вечерней работы: света достаточно, но глаза не устают».</blockquote><p class="review-card__author">Анна, архитектор</p></article>
+          <article class="review-card"><p class="review-card__rating" aria-label="Оценка 5 из 5">★★★★★</p><blockquote class="review-card__quote">«Подобрали три разных светильника, и они выглядят как единая коллекция».</blockquote><p class="review-card__author">Михаил, Москва</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="faq">
+      <div class="container faq">
+        <div class="faq__heading"><p class="eyebrow">Есть вопросы?</p><h2 class="section-heading__title">Коротко о важном</h2><a class="text-link" href="contacts.html">Все контакты <span aria-hidden="true">→</span></a></div>
+        <div class="faq__list">
+          <details class="faq__item"><summary class="faq__question">Лампочки входят в комплект?</summary><p class="faq__answer">Да, для всех моделей со сменным источником света мы кладём подходящую LED-лампу.</p></details>
+          <details class="faq__item"><summary class="faq__question">Можно ли вернуть светильник?</summary><p class="faq__answer">Можно в течение 14 дней, если сохранены товарный вид, упаковка и комплектность.</p></details>
+          <details class="faq__item"><summary class="faq__question">Вы помогаете с установкой?</summary><p class="faq__answer">Да, в Москве доступна установка партнёром. Для других городов подготовим понятную схему монтажа.</p></details>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Учебный проект</p>
+  <footer class="site-footer" id="contacts">
+    <div class="site-footer__inner container">
+      <div><a class="site-header__logo site-header__logo--light" href="index.html"><span class="site-header__logo-mark" aria-hidden="true"></span>FORMA</a><p class="site-footer__tagline">Свет, который чувствует дом.</p></div>
+      <div class="site-footer__column"><h2 class="site-footer__title">Навигация</h2><a href="catalog.html">Каталог</a><a href="product.html">Aura Mini</a><a href="order.html">Оставить заявку</a></div>
+      <div class="site-footer__column"><h2 class="site-footer__title">Контакты</h2><a href="tel:+74951234567">+7 495 123-45-67</a><a href="mailto:hello@forma-light.ru">hello@forma-light.ru</a><span>Москва, ул. Светлая, 7</span></div>
+    </div>
+    <div class="site-footer__bottom container"><span>© 2026 FORMA</span><span>Учебный проект · ЭФБО-01-25</span></div>
   </footer>
+
+  <a class="floating-action" href="#main-content" aria-label="Вернуться наверх">↑</a>
+  <dialog class="order-dialog" id="order-dialog" aria-labelledby="dialog-title">
+    <form class="order-form order-dialog__form" id="quick-order-form" method="dialog">
+      <button class="order-dialog__close js-close-order" type="button" aria-label="Закрыть окно">×</button>
+      <p class="eyebrow">Быстрая заявка</p><h2 class="order-dialog__title" id="dialog-title">Обсудим ваш свет</h2><p class="order-dialog__lead">Оставьте контакты — консультант перезвонит в течение рабочего дня.</p>
+      <input id="quick-product" name="product" type="hidden" value="Консультация по свету">
+      <div class="order-form__field"><label class="order-form__label" for="quick-name">Имя *</label><input class="order-form__input" id="quick-name" name="name" type="text" minlength="2" autocomplete="name" placeholder="Как к вам обращаться" required></div>
+      <div class="order-form__row"><div class="order-form__field"><label class="order-form__label" for="quick-email">E-mail *</label><input class="order-form__input" id="quick-email" name="email" type="email" autocomplete="email" placeholder="name@example.ru" required></div><div class="order-form__field"><label class="order-form__label" for="quick-phone">Телефон *</label><input class="order-form__input" id="quick-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 999 000-00-00" pattern="[+0-9 ()-]{10,20}" required></div></div>
+      <div class="order-form__field"><label class="order-form__label" for="quick-message">Комментарий</label><textarea class="order-form__input order-form__textarea" id="quick-message" name="message" rows="3" placeholder="Расскажите о комнате или задаче"></textarea></div>
+      <label class="order-form__check"><input name="agreement" type="checkbox" required><span>Я согласен на обработку персональных данных *</span></label>
+      <div class="order-form__actions"><button class="button" type="submit">Отправить заявку</button><span class="order-form__status" role="status" aria-live="polite"></span></div>
+    </form>
+  </dialog>
 </body>
 </html>

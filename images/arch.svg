@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 520" role="img" aria-labelledby="title desc">
+  <title id="title">Светильник Arch</title><desc id="desc">Дуговой напольный светильник на синем фоне</desc>
+  <defs><linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dce5e8"/><stop offset="1" stop-color="#8eabb4"/></linearGradient><radialGradient id="glow4"><stop stop-color="#fff6c5" stop-opacity=".85"/><stop offset="1" stop-color="#fff6c5" stop-opacity="0"/></radialGradient></defs>
+  <rect width="480" height="520" rx="24" fill="url(#bg4)"/><circle cx="327" cy="224" r="125" fill="url(#glow4)"/><path d="M148 430V229c0-102 61-160 172-160" fill="none" stroke="#263a40" stroke-width="16" stroke-linecap="round"/><path d="M274 65h100l-18 105h-64z" fill="#324c53"/><ellipse cx="324" cy="169" rx="33" ry="10" fill="#fff0a8"/><rect x="93" y="425" width="125" height="26" rx="13" fill="#263a40"/><ellipse cx="155" cy="460" rx="91" ry="13" fill="#263a40" opacity=".16"/>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 520" role="img" aria-labelledby="title desc">
+  <title id="title">Светильник Beam</title><desc id="desc">Графитовая рабочая лампа на жёлтом фоне</desc>
+  <defs><linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f0df9d"/><stop offset="1" stop-color="#d29c47"/></linearGradient></defs>
+  <rect width="480" height="520" rx="24" fill="url(#bg5)"/><ellipse cx="240" cy="453" rx="135" ry="17" fill="#413b32" opacity=".2"/><rect x="145" y="424" width="190" height="31" rx="15" fill="#2e3534"/><path d="M228 422l-23-162 18-3 23 162z" fill="#39413f"/><circle cx="214" cy="258" r="20" fill="#252c2b"/><path d="M211 250l78-100 15 11-78 100z" fill="#39413f"/><circle cx="299" cy="155" r="20" fill="#252c2b"/><path d="M289 141l-66-61 13-14 66 62z" fill="#39413f"/><path d="M139 61h117l-19 93h-79z" fill="#2b3231" transform="rotate(7 198 107)"/><path d="M154 143l76 9-16 18-50-6z" fill="#fff0aa" opacity=".9"/>
+</svg>
