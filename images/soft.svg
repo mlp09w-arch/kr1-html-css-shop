@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 520" role="img" aria-labelledby="title desc">
-  <title id="title">Светильник Soft</title><desc id="desc">Настенный светильник с отражённым светом на лиловом фоне</desc>
-  <defs><linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ddd8e6"/><stop offset="1" stop-color="#9a8ca9"/></linearGradient><radialGradient id="glow6"><stop stop-color="#fff5c9" stop-opacity=".9"/><stop offset="1" stop-color="#fff5c9" stop-opacity="0"/></radialGradient></defs>
-  <rect width="480" height="520" rx="24" fill="url(#bg6)"/><circle cx="240" cy="247" r="190" fill="url(#glow6)"/><rect x="224" y="89" width="32" height="318" rx="16" fill="#514958"/><path d="M110 188h260l-34 158H144z" fill="#eee4d3"/><path d="M144 346h192c-18 35-50 57-96 57s-78-22-96-57z" fill="#5d5365"/><ellipse cx="240" cy="347" rx="96" ry="19" fill="#fff3b8"/><ellipse cx="240" cy="435" rx="115" ry="14" fill="#4e4654" opacity=".15"/>
-</svg>

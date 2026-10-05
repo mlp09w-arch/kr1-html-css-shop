@@ -3,65 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Каталог дизайнерских светильников FORMA: настольный, подвесной, напольный и настенный свет.">
-  <title>Каталог светильников — FORMA</title>
+  <meta name="description" content="Каталог из четырёх настольных ламп магазина СветДом.">
+  <title>Каталог ламп — СветДом</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Перейти к содержимому</a>
-  <header class="site-header"><div class="site-header__inner container">
-    <a class="site-header__logo" href="index.html" aria-label="FORMA — на главную"><span class="site-header__logo-mark" aria-hidden="true"></span>FORMA</a>
-    <nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list">
-      <li><a class="site-nav__link" href="index.html">Главная</a></li><li><a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a></li><li><a class="site-nav__link" href="product.html">Светильник Aura</a></li><li><a class="site-nav__link" href="order.html">Заявка</a></li><li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
-    </ul></nav>
-    <a class="button button--small" href="order.html">Подобрать свет</a>
-  </div></header>
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a class="site-header__logo" href="index.html">СветДом</a>
+      <nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list">
+        <li><a class="site-nav__link" href="index.html">Главная</a></li>
+        <li><a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a></li>
+        <li><a class="site-nav__link" href="product.html">Лампа «Лайм»</a></li>
+        <li><a class="site-nav__link" href="order.html">Заявка</a></li>
+        <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+      </ul></nav>
+    </div>
+  </header>
 
   <main id="main-content">
-    <div class="page-header container">
-      <nav class="breadcrumbs" aria-label="Хлебные крошки"><ol class="breadcrumbs__list"><li><a href="index.html">Главная</a></li><li aria-current="page">Каталог</li></ol></nav>
-      <div class="page-header__row"><div><p class="eyebrow">Коллекция FORMA</p><h1 class="page-header__title">Свет для каждого сценария</h1></div><p class="page-header__lead">От локального света для чтения до выразительного акцента над обеденным столом.</p></div>
+    <div class="page-title container">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span>→</span><span aria-current="page">Каталог</span></nav>
+      <h1>Каталог настольных ламп</h1>
+      <p>В каталоге представлены четыре модели. Фильтры добавлены как пример интерфейса.</p>
     </div>
 
-    <div class="catalog-layout container">
-      <aside class="catalog-filter" aria-labelledby="filter-title">
-        <div class="catalog-filter__sticky">
-          <div class="catalog-filter__heading"><h2 class="catalog-filter__title" id="filter-title">Фильтры</h2><button class="catalog-filter__reset" type="reset" form="catalog-filter-form">Сбросить</button></div>
-          <form class="filter-form" id="catalog-filter-form">
-            <fieldset class="filter-form__group"><legend class="filter-form__legend">Тип света</legend>
-              <label class="filter-form__option"><input type="checkbox" name="type" value="table"><span>Настольный</span><small>2</small></label>
-              <label class="filter-form__option"><input type="checkbox" name="type" value="pendant"><span>Подвесной</span><small>2</small></label>
-              <label class="filter-form__option"><input type="checkbox" name="type" value="floor"><span>Напольный</span><small>1</small></label>
-              <label class="filter-form__option"><input type="checkbox" name="type" value="wall"><span>Настенный</span><small>1</small></label>
-            </fieldset>
-            <fieldset class="filter-form__group"><legend class="filter-form__legend">Цвет</legend><div class="filter-form__colors">
-              <label class="color-choice color-choice--sand"><input type="radio" name="color" value="sand"><span class="visually-hidden">Песочный</span></label>
-              <label class="color-choice color-choice--clay"><input type="radio" name="color" value="clay"><span class="visually-hidden">Терракотовый</span></label>
-              <label class="color-choice color-choice--black"><input type="radio" name="color" value="black"><span class="visually-hidden">Чёрный</span></label>
-            </div></fieldset>
-            <fieldset class="filter-form__group"><legend class="filter-form__legend">Цена</legend><label class="filter-form__range-label" for="price">До <output id="price-output" for="price">15 000 ₽</output></label><input class="filter-form__range" id="price" name="price" type="range" min="5000" max="20000" step="500" value="15000"></fieldset>
-            <button class="button button--wide" type="submit">Показать 6 моделей</button>
-          </form>
-        </div>
+    <div class="catalog container">
+      <aside class="filter">
+        <h2 class="filter__title">Фильтры</h2>
+        <form class="filter__form">
+          <fieldset class="filter__group"><legend>Стиль</legend>
+            <label><input type="checkbox" name="style" value="work"> Рабочая</label>
+            <label><input type="checkbox" name="style" value="classic"> Классическая</label>
+            <label><input type="checkbox" name="style" value="decor"> Декоративная</label>
+          </fieldset>
+          <fieldset class="filter__group"><legend>Цена</legend>
+            <label><input type="radio" name="price" value="5000"> До 5 000 ₽</label>
+            <label><input type="radio" name="price" value="9000"> До 9 000 ₽</label>
+          </fieldset>
+          <button class="button button--outline" type="reset">Сбросить</button>
+        </form>
       </aside>
 
-      <section class="catalog-products" aria-labelledby="products-title">
-        <div class="catalog-products__toolbar"><h2 class="catalog-products__title" id="products-title">Все светильники <span>6</span></h2><label class="select-field">Сортировка<span class="visually-hidden"> товаров</span><select name="sort"><option>По популярности</option><option>Сначала дешевле</option><option>Сначала дороже</option></select></label></div>
+      <section class="catalog__products" aria-labelledby="catalog-heading">
+        <h2 class="catalog__heading" id="catalog-heading">Все товары <span>4</span></h2>
         <div class="product-grid product-grid--catalog">
-          <article class="product-card product-card--featured"><span class="product-card__badge">Хит</span><a class="product-card__image-link" href="product.html"><img class="product-card__image" src="images/aura.svg" alt="Настольный светильник Aura Mini" width="480" height="520"></a><div class="product-card__body"><p class="product-card__category">Настольный свет</p><h3 class="product-card__title"><a href="product.html">Aura Mini</a></h3><p class="product-card__description">Регулируемый тёплый свет для работы и чтения.</p><div class="product-card__footer"><p class="product-card__price">7 990 ₽</p><a class="button button--icon" href="order.html#order-form" aria-label="Заказать Aura Mini">+</a></div></div></article>
-          <article class="product-card"><span class="product-card__badge product-card__badge--new">Новинка</span><a class="product-card__image-link" href="product.html"><img class="product-card__image" src="images/line.svg" alt="Подвесной светильник Line 40" width="480" height="520"></a><div class="product-card__body"><p class="product-card__category">Подвесной свет</p><h3 class="product-card__title"><a href="product.html">Line 40</a></h3><p class="product-card__description">Тонкая световая линия для длинных поверхностей.</p><div class="product-card__footer"><p class="product-card__price">11 990 ₽</p><a class="button button--icon" href="order.html#order-form" aria-label="Заказать Line 40">+</a></div></div></article>
-          <article class="product-card product-card--sale"><span class="product-card__badge product-card__badge--sale">−15%</span><a class="product-card__image-link" href="product.html"><img class="product-card__image" src="images/orb.svg" alt="Светильник Orb" width="480" height="520"></a><div class="product-card__body"><p class="product-card__category">Рассеянный свет</p><h3 class="product-card__title"><a href="product.html">Orb</a></h3><p class="product-card__description">Ровное мягкое свечение матового стекла.</p><div class="product-card__footer"><p class="product-card__price"><s>7 590 ₽</s> 6 490 ₽</p><a class="button button--icon" href="order.html#order-form" aria-label="Заказать Orb">+</a></div></div></article>
-          <article class="product-card"><a class="product-card__image-link" href="product.html"><img class="product-card__image" src="images/arch.svg" alt="Напольный светильник Arch" width="480" height="520"></a><div class="product-card__body"><p class="product-card__category">Напольный свет</p><h3 class="product-card__title"><a href="product.html">Arch</a></h3><p class="product-card__description">Мягкая дуга света над креслом или диваном.</p><div class="product-card__footer"><p class="product-card__price">14 990 ₽</p><a class="button button--icon" href="order.html#order-form" aria-label="Заказать Arch">+</a></div></div></article>
-          <article class="product-card"><a class="product-card__image-link" href="product.html"><img class="product-card__image" src="images/beam.svg" alt="Настольный светильник Beam" width="480" height="520"></a><div class="product-card__body"><p class="product-card__category">Рабочий свет</p><h3 class="product-card__title"><a href="product.html">Beam</a></h3><p class="product-card__description">Точный световой поток и поворотный плафон.</p><div class="product-card__footer"><p class="product-card__price">8 990 ₽</p><a class="button button--icon" href="order.html#order-form" aria-label="Заказать Beam">+</a></div></div></article>
-          <article class="product-card"><span class="product-card__badge product-card__badge--new">Новинка</span><a class="product-card__image-link" href="product.html"><img class="product-card__image" src="images/soft.svg" alt="Настенный светильник Soft" width="480" height="520"></a><div class="product-card__body"><p class="product-card__category">Настенный свет</p><h3 class="product-card__title"><a href="product.html">Soft</a></h3><p class="product-card__description">Отражённый свет для спокойной вечерней атмосферы.</p><div class="product-card__footer"><p class="product-card__price">5 590 ₽</p><a class="button button--icon" href="order.html#order-form" aria-label="Заказать Soft">+</a></div></div></article>
+          <article class="product-card product-card--new">
+            <span class="product-card__badge">Новинка</span>
+            <a href="product.html"><img class="product-card__image" src="images/lamp-green.webp" alt="Зелёная рабочая лампа Лайм" width="900" height="900"></a>
+            <div class="product-card__content"><p class="product-card__category">Рабочая лампа</p><h3 class="product-card__title"><a href="product.html">Лайм</a></h3><p class="product-card__text">Регулируемый кронштейн, металлический корпус, яркий цвет.</p><div class="product-card__bottom"><strong>3 490 ₽</strong><a class="button button--small" href="order.html#order-form">Заказать</a></div></div>
+          </article>
+          <article class="product-card">
+            <img class="product-card__image" src="images/lamp-beige.webp" alt="Бежевая лампа Классика" width="900" height="900">
+            <div class="product-card__content"><p class="product-card__category">Классическая лампа</p><h3 class="product-card__title">Классика</h3><p class="product-card__text">Тканевый абажур, бежевый корпус и золотистое основание.</p><div class="product-card__bottom"><strong>5 990 ₽</strong><a class="button button--small" href="order.html#order-form">Заказать</a></div></div>
+          </article>
+          <article class="product-card">
+            <img class="product-card__image" src="images/lamp-black.webp" alt="Чёрная лампа Нуар" width="900" height="900">
+            <div class="product-card__content"><p class="product-card__category">Классическая лампа</p><h3 class="product-card__title">Нуар</h3><p class="product-card__text">Чёрный абажур и рельефное стеклянное основание.</p><div class="product-card__bottom"><strong>6 490 ₽</strong><a class="button button--small" href="order.html#order-form">Заказать</a></div></div>
+          </article>
+          <article class="product-card product-card--hit">
+            <span class="product-card__badge">Хит</span>
+            <img class="product-card__image" src="images/lamp-bird.webp" alt="Деревянная лампа Лесная птица" width="900" height="900">
+            <div class="product-card__content"><p class="product-card__category">Декоративная лампа</p><h3 class="product-card__title">Лесная птица</h3><p class="product-card__text">Деревянный корпус, фигурный плафон и тёплый свет.</p><div class="product-card__bottom"><strong>8 990 ₽</strong><a class="button button--small" href="order.html#order-form">Заказать</a></div></div>
+          </article>
         </div>
-        <aside class="catalog-note"><span class="catalog-note__icon" aria-hidden="true">✦</span><div><h2>Не знаете, какой свет выбрать?</h2><p>Пришлите план комнаты — дизайнер бесплатно предложит три подходящих модели.</p></div><a class="button button--light" href="order.html">Получить подбор</a></aside>
       </section>
     </div>
   </main>
 
-  <footer class="site-footer"><div class="site-footer__inner container"><div><a class="site-header__logo site-header__logo--light" href="index.html"><span class="site-header__logo-mark" aria-hidden="true"></span>FORMA</a><p class="site-footer__tagline">Свет, который чувствует дом.</p></div><div class="site-footer__column"><h2 class="site-footer__title">Навигация</h2><a href="index.html#advantages">Преимущества</a><a href="index.html#popular">Популярное</a><a href="contacts.html">Контакты</a></div><div class="site-footer__column"><h2 class="site-footer__title">Связаться</h2><a href="tel:+74951234567">+7 495 123-45-67</a><a href="mailto:hello@forma-light.ru">hello@forma-light.ru</a></div></div><div class="site-footer__bottom container"><span>© 2026 FORMA</span><span>Учебный проект · ЭФБО-01-25</span></div></footer>
-
-  <a class="floating-action" href="#main-content" aria-label="Вернуться наверх">↑</a>
+  <footer class="site-footer"><div class="site-footer__inner container"><div><strong class="site-footer__logo">СветДом</strong><p>Учебный интернет-магазин настольных ламп.</p></div><div><h2 class="site-footer__title">Разделы</h2><a href="index.html#advantages">Преимущества</a><a href="order.html">Заявка</a><a href="contacts.html">Контакты</a></div><div><h2 class="site-footer__title">Связаться</h2><a href="tel:+74951234567">+7 495 123-45-67</a><a href="mailto:shop@example.ru">shop@example.ru</a></div></div><div class="site-footer__bottom container">© 2026 СветДом · Учебный проект</div></footer>
+  <a class="back-to-top" href="#main-content" aria-label="Наверх">↑</a>
 </body>
 </html>

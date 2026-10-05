@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 520" role="img" aria-labelledby="title desc">
-  <title id="title">Светильник Line 40</title><desc id="desc">Линейный подвесной светильник на зелёном фоне</desc>
-  <defs><linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c9d4bd"/><stop offset="1" stop-color="#7e9279"/></linearGradient><linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff5be" stop-opacity=".65"/><stop offset="1" stop-color="#fff5be" stop-opacity="0"/></linearGradient></defs>
-  <rect width="480" height="520" rx="24" fill="url(#bg2)"/><path d="M130 0v193M350 0v193" stroke="#29342c" stroke-width="5"/><rect x="87" y="188" width="306" height="28" rx="14" fill="#253129"/><rect x="105" y="211" width="270" height="7" rx="3" fill="#fff3aa"/><path d="M105 218h270l60 248H45z" fill="url(#beam)"/><rect x="68" y="427" width="344" height="18" rx="9" fill="#435848" opacity=".3"/>
-  <circle cx="130" cy="354" r="34" fill="#eae3d2"/><rect x="123" y="384" width="14" height="43" rx="7" fill="#eae3d2"/><path d="M307 410h56l-14-86h-28z" fill="#b55f43"/>
-</svg>
