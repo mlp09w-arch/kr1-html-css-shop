@@ -35,6 +35,10 @@ body {
   line-height: 1.5;
 }
 
+main {
+  min-height: calc(100vh - (68+201+40));
+}
+
 img {
   display: block;
   max-width: 100%;
