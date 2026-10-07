@@ -36,7 +36,7 @@ body {
 }
 
 main {
-  min-height: calc(100vh - (68+201+40));
+  min-height: calc(100vh - 309px);
 }
 
 img {
