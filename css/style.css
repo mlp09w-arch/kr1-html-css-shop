@@ -42,6 +42,7 @@ main {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -239,6 +240,8 @@ p {
 
 .hero__image {
   width: 100%;
+  height: auto;
+  object-fit: contain;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
 }
@@ -321,9 +324,9 @@ p {
 
 .product-card__image {
   width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  background: var(--color-light);
+  height: auto;
+  object-fit: contain;
+  background: var(--color-white);
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -471,6 +474,9 @@ p {
 }
 
 .product-detail__photo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
 }
@@ -566,7 +572,7 @@ p {
 .small-product img {
   width: 110px;
   height: 110px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .small-product h3,
